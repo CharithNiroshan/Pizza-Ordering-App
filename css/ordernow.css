@@ -1,0 +1,236 @@
+/* ==========================================================================================================================
+                                                        Codes That affect whole document
+========================================================================================================================== */
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a
+{
+    text-decoration: none;
+}
+
+/* ==========================================================================================================================
+                                                        Header
+========================================================================================================================== */
+header
+{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 60px;
+    background-color: rgb(71, 71, 71);
+    opacity: 0.9;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    z-index: 1000;
+}
+header:focus
+{
+    background-color: rgb(105, 104, 104);
+}
+header h3
+{
+    align-self: center;
+    margin-left: 25%;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 30px;
+    padding-bottom: 0px;
+    border-bottom:2px solid white;
+}
+header ul
+{
+    align-self: center;
+    margin-right: 20%;
+    list-style: none;
+}
+#border a
+{
+    border-radius: 2px solid white;
+}
+header ul li 
+{
+    display: inline;
+    padding-right: 10px;
+}
+header ul li a
+{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+header ul li a:hover
+{
+    border-bottom:1px solid white;
+}
+
+
+/* ==========================================================================================================================
+                                                        Backgorund Image
+========================================================================================================================== */
+
+.backgroundimage
+{
+    width: 100%;
+    height:350px;
+    background-image: url("backgroundimg//pizza3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.backgroundimage::after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5 );
+}
+
+
+/* ==========================================================================================================================
+                                                       Go to Top Button
+========================================================================================================================== */
+
+#icon
+{
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    width: 60px;
+    height: 60px;
+}
+
+/* ==========================================================================================================================
+                                                           Form
+========================================================================================================================== */
+
+.form
+{
+    width: 75%;
+    margin: 20px auto;
+}
+.formcontent
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 40px;
+}
+section h2
+{
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+.text
+{
+    width: 100%;
+    height: 25px;
+    padding-left: 20px;
+}
+.content select
+{
+    width: 100%;
+    margin-bottom: 5px;
+    height: 25px;
+    text-align: center;
+}
+.radiobutton
+{
+    width:95%;
+    display: flex;
+    flex-direction: row;
+}
+.radiobutton label
+{
+    flex: 1;
+    padding-left: 30px;
+}
+.radiobutton input
+{
+    flex: 1;
+    align-self: flex-end;
+}
+.deliveryaddress
+{
+    visibility: hidden;
+}
+.paymentinfo
+{
+    display: none;
+}
+#yesno
+{
+    display: none;
+}
+.order
+{
+    width: 100%;
+    height: 65px;
+    padding-left: 25px;
+}
+button
+{
+    background-color: blue;
+    color: white;
+    font-size: 17px;
+    border-radius: 8px;
+    margin: 30px;
+    border: none;
+    padding: 12px 15px;
+}
+
+
+/* ==========================================================================================================================
+                                                        Footer
+========================================================================================================================== */
+
+footer
+{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(71, 71, 71);
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    color: white;
+    font-size: 16px;
+    justify-content: space-around;
+}
+#other
+{
+    margin-left: 30px;
+    align-self: center;
+}
+#copyright
+{
+    margin-right: 30px;
+    align-self: center;
+}
+#socialmedia
+{
+    height: 50px;
+    display: flex;
+    padding-left: 20px;
+    flex-direction: row;
+    list-style: none;
+}
+#socialmedia li
+{
+    padding: 0px 10px;   
+    display: inline;
+}
+#socialmedia img
+{
+    align-items: center;
+    margin-top: 5px;
+} 

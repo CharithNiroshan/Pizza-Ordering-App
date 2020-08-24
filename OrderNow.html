@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ordernow.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="top">
+        <h3>
+            Bruno's Pizzaria
+        </h3>
+        <ul>
+            <li id="#border">
+                <a href="OrderNow.html">Order Now</a>
+            </li>
+            <li>
+                <a href="">Register Now</a>
+            </li>
+            <li>
+                <a href="">Features</a>
+            </li>
+        </ul>
+    </header>
+    <div class="backgroundimage" id="top">
+    </div>
+    <div class="form">
+        <form  method="POST" >
+            <div class="formcontent">
+                <section class="deliverymethod" >
+                    <h2>
+                        Pickup or Delivery?
+                    </h2>
+                    <div class="content">
+                        <div class="radio">
+                            <div class="radiobutton">
+                                <label for="pickup">Pickup</label>
+                                <input type="radio" class="radio" name="type" id="pickup">
+                            </div>
+                            <br>
+                            <div class="radiobutton">
+                                <label for="delivery">Delivery</label>
+                                <input type="radio" class="radio" name="type" id="delivery">
+                            </div>
+                        </div>
+                        <br>
+                        <h2>Your Pizza Order</h2>
+                        <input type="text" class="order" name="order" id="order" placeholder="Example : 1 large Supreme">
+                    </div>
+                </section>
+                <section class="customerdetails">
+                    <h2>
+                        Customer Details
+                    </h2>
+                    <div class="content">
+                        <label for="name">Name</label>
+                        <br><br>
+                        <input type="text" name="name" id="name" class="text" placeholder="Example : John Smith">
+                        <br><br>
+                        <label for="email">Email</label>
+                        <br><br>
+                        <input type="email" name="email" id="email"  class="text" placeholder="Example : example@example.com">
+                        <br><br>
+                        <label for="contact">Contact Number</label>
+                        <br><br>
+                        <input type="tel" name="contact" id="contact"  class="text" placeholder="Example : 0776 213 875">
+                    </div>
+                </section>
+                <section class="deliveryaddress">
+                    <h2>
+                        Delivery Address
+                    </h2>
+                    <div class="content">
+                        <label for="address">Address</label>
+                        <br><br>
+                        <input type="text" name="address"  class="text" id="deladdress" placeholder="Example : 19A/156">
+                        <br><br>
+                        <label for="suburb">Suburb</label>
+                        <br><br>
+                        <input type="text" name="suburb"  class="text" id="delsuburb" placeholder="Example : Main Road,Kandy">
+                        <br><br>
+                        <label for="postcode">Postcode</label>
+                        <br><br>
+                        <input type="text" name="postcode"  class="text" id="delpostcode" placeholder="Example : 1234">
+                    </div>
+                </section>
+                <section class="billingaddrees">
+                    <h2>
+                        Billing Address
+                    </h2>
+                    <div class="content">
+                        <div class="radio" id="yesno">
+                            <label for="same">Same as delivery address?</label>
+                            <br><br>
+                            <div class="radiobutton">
+                                <label for="yes">Yes</label>
+                                <input type="radio" name="choice" class="radio" id="yes">
+                            </div>
+                            <br>
+                            <div class="radiobutton">
+                                <label for="No">No</label>
+                                <input type="radio" name="choice" class="radio" id="no">
+                            </div>
+                        </div>
+                        <br>
+                        <label for="address">Address</label>
+                        <br><br>
+                        <input type="text" name="address"  class="text" id="biladdress" placeholder="Example : 19A/156">
+                        <br><br>
+                        <label for="suburb">Suburb</label>
+                        <br><br>
+                        <input type="text" name="suburb"  class="text" id="bilsuburb" placeholder="Example : Main Road,Kandy">
+                        <br><br>
+                        <label for="postcode">Postcode</label>
+                        <br><br>
+                        <input type="text" name="postcode"  class="text" id="bilpostcode" placeholder="Example : 1234">
+                    </div>
+                </section>
+                <section class="paymethod">
+                    <h2>
+                        Pay online or on pickup?
+                    </h2>
+                    <div class="radio">
+                        <div class="radiobutton">
+                            <label for="paypickup">Pickup</label>
+                            <input type="radio" name="method" id="paypickup" class="radio">   
+                        </div>
+                        <br>
+                        <div class="radiobutton">
+                            <label for="payonline">Online</label>
+                            <input type="radio" name="method" id="payonline"  class="radio">   
+                        </div>
+                    </div>
+                </section>
+                <section class="paymentinfo">
+                    <h2>
+                        Payment Information
+                    </h2>
+                    <div class="content">
+                        <label for="fullname">Full Name</label>
+                        <br><br>
+                        <input type="text" name="fullname"  class="text" id="fullname" placeholder="Example : John Smith Harmission" >
+                        <br><br>
+                        <label for="creditcard">Credit Card</label>
+                        <br><br>
+                        <input type="number" name="creditcard"  class="text" id="creditcard" placeholder="Example  :1234567890123456">
+                        <br><br>
+                        <label for="expiry">Expiry</label>
+                        <br><br>
+                            <select name="expiry" id="month" >
+                                <option value="selectone">Select One</option>
+                                <option value="january">January</option>
+                                <option value="february">February</option>
+                                <option value="march">March</option>
+                                <option value="april">April</option>
+                                <option value="may">May</option>
+                                <option value="june">June</option>
+                                <option value="july">July</option>
+                                <option value="august">August</option>
+                                <option value="september">September</option>
+                                <option value="october">October</option>
+                                <option value="november">November</option>
+                                <option value="december">December</option>
+                            </select>
+                            <br>
+                            <select name="expiry" id="year">
+                                <option value="selectone">Select One</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                                <option value="2030">2030</option>
+                            </select>
+                        <br><br>
+                        <label for="cvv">CVV</label>
+                        <br><br>
+                        <input type="number" name="cvv"  class="text" id="cvv"  placeholder="Example : 123" >
+                    </div>
+                </section>
+            </div>
+            <button  id="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <p id="other">
+            @2020 Bruno's Pizzeria
+        </p>
+        <div>
+            <ul id="socialmedia">
+                <li >
+                    <a href="https://www.facebook.com">
+                        <img src="img/Facebook2.png" alt="" width="40px" height="40px">
+                    </a>
+                </li>
+                <li >
+                    <a href="https://www.twitter.com">
+                        <img id="twitter" src="img/Twitter2.png" alt="" width="40px" height="40px">
+                    </a>
+                </li>
+                <li >
+                    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiJyZn5toLrAhVabn0KHbJFDPQQFjAAegQIBRAB&url=https%3A%2F%2Faboutme.google.com%2Fu%2F0%2F&usg=AOvVaw3nC3wuZ2VVav5_6EkJZ9oL">
+                        <img src="img/Google2.png" width="40px" height="40px" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p id="copyright">
+            Created by ABC software (Pvt).Ltd
+        </p>
+    </footer>
+    <script src="js/ordernow.js"></script>
+    <a href=""><img id="icon" src="img/upper-arrow.png" alt=""></a>  
+</body>
+</html>
